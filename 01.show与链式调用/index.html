@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="index.js"></script>
+</head>
+<body>
+	<div id="div">div:block</div>
+	<span id="span">span</span>
+	<div id="div2" style="display:inline-block;">div:inline-block</div>
+</body>
+<script>
+	
+	setTimeout(function(){
+		$('#div,#span,#div2').hide();
+	},1000)
+	
+	setTimeout(function(){
+		$('#div,#span,#div2').show();
+	},2000)
+	
+	setTimeout(function(){
+		//链式调用 (⊙０⊙)由于显示太快,所以在console中查看结果
+		$('#div,#span,#div2').hide().show().hide().show();
+	},4000)
+	
+</script>
+</html>
