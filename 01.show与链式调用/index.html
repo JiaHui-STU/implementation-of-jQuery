@@ -4,13 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<script src="index.js"></script>
+	<style>
+		#none,#none2{ display: none; }
+	</style>
 </head>
 <body>
-	<div id="div">div:block</div>
-	<span id="span">span</span>
-	<div id="div2" style="display:inline-block;">div:inline-block</div>
+	<div id="div">默认值为block</div>
+	<span id="span">默认值为inline</span>
+	<div id="div2" style="display:inline-block;">修改为inline-block</div>
+	<div id="none">通过css隐藏了</div>
+	<div id="none2" style="display:none">通过css和style隐藏了</div>
 </body>
 <script>
+	
+	$('#none,#none2').show();
 	
 	setTimeout(function(){
 		$('#div,#span,#div2').hide();
@@ -21,8 +28,8 @@
 	},2000)
 	
 	setTimeout(function(){
-		//链式调用 (⊙０⊙)由于显示太快,所以在console中查看结果
-		$('#div,#span,#div2').hide().show().hide().show();
+		//链式调用 (⊙０⊙)由于显示太快，只能看到最终显示出来
+		$('#div,#span,#div2').hide().show();
 	},4000)
 	
 </script>
