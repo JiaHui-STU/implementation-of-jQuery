@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="index.js"></script>
+	<!--<script src="../jquery-2.0.3.js"></script>-->
+</head>
+<body>
+	<div id="div"></div>
+</body>
+<script>
+	$('#div').data("num", 123);
+	$('#div').data("objVal", {val:123});
+	console.log($('#div').data("num"));
+	console.log($('#div').data("objVal"));
+</script>
+</html>

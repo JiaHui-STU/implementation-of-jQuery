@@ -1,8 +1,12 @@
+博客地址：http://www.cnblogs.com/jiahuix/
+
 ###学习目的：框架+学习API+有一些API想不通是怎么实现的
 1. 框架
 2. show => 如何获取Element的默认属性？createElement=>appendTo=>getDisplay<br>
    保存进缓存  重复利用
 3. 链式调用
+1. data与
+1. cache机制
 4. isNumber, isFunction【typeof缺陷】  
 5. $(document).ready(function(){}) 原理、与window.onload区别<br>
         DOMContentLoaded，load
