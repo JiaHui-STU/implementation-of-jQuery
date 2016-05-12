@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="index.js"></script>
+</head>
+<body>
+</body>
+<script>
+	
+	function abc () {};
+	console.log("funnction abc : " + $.isFunction(abc));
+	
+	console.log("window : " + $.isWindow(window));
+	
+	var num = [1, '1', '1cm', 'cm1', 2e64, '2e64', NaN, Infinity, null, undefined];
+	num.forEach(function(val){
+		console.log(val + " : " + $.isNumberic(val));
+	})
+</script>
+</html>
